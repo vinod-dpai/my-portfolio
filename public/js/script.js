@@ -1,9 +1,11 @@
 const navToggle = document.querySelector('.nav-toggle');
 
-navToggle.addEventListener('click', (e) => {
-  if (navToggle.checked) {
-    document.querySelector('.content').style.display = 'none';
-  } else {
-    document.querySelector('.content').style.display = 'flex';
-  }
+function toggleContentDisplay(toggle) {
+  document.querySelector('.content').style.display = toggle ? 'none' : 'flex';
+}
+
+navToggle.addEventListener('click', () => {
+  toggleContentDisplay(navToggle.checked);
 });
+
+toggleContentDisplay(navToggle.checked);
