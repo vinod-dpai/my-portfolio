@@ -29,7 +29,7 @@ body {
 
 .navbar .logo {
   margin-left: 90%;
-  margin-top: 1em;
+  margin-top: 1.1em;
   position: relative;
   border: 5px solid var(--primaryColor);
   width: 10px;
